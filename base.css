@@ -1,17 +1,25 @@
+*{
+    text-decoration: none;
+}
 html, body {
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 body {
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
 }
-
+.links{
+    width: 200px;
+    padding: 10px;
+    line-height: 35px;
+}
 .wrapper {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
 }
 .main {
     display: flex;
@@ -20,19 +28,181 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: rgb(233, 233, 233);
     padding: 10px 20px 0px;
 }
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: rgb(10, 63, 133);
     min-height: 150px;
+}
+.header-about {
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 63, 133);
+    width: 1000px;
+    height: 200px;
+    display:flex;
+    padding: 10px;
 }
 .content {
     background-color: white;
+    color: rgb(10, 63, 133);
     min-height: 300px;
     padding: 20px;
+    position: relative;
+    z-index: 1;
 }
 .footer {
-    background-color: rgb(99, 56, 240);
+    background-color: rgb(10, 63, 133);
     min-height: 150px;
+}
+.titulo{
+    color:white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_footer{
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 10px;
+    display:inline-block;
+    line-height: 25px;
+}
+.logo_footer{
+    width: 100px;
+    height: 80px;
+    display: flex;
+    margin-right: 20px;
+}
+.logo_header{
+    width: 200px;
+    padding: 20px;  
+    margin-left: 350px;
+}
+#linha-horizontal{
+    width: 200px;
+    border: 1px solid #ffffff;
+    margin-bottom: 10px;
+}
+.img-header{
+    width: 100%;
+    position: relative;
+}
+.logo_header_about{
+    width: 1000px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.bg-overlay-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.5)); 
+    z-index: 0;
+}
+.tituto-about{
+    width: 5000px;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  
+  th, td {
+    padding: 2px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  tr:hover {
+    background-color: #ccc;
+  }
+.texto_servicos{
+    width: 600px;
+    text-align: left;
+    text-justify: newspaper;
+}
+.content > .bg-video{
+    position: absolute; 
+    right: 0px; 
+    bottom: 0px;
+    top: 0px;
+    min-width: 100%; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1;
+    background-size:cover;
+    overflow: hidden;
+}
+.content > .bg-video > video {
+    width: 100%;
+    height: 100%;
+}
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 5.0), rgba(255, 255, 255, 0.9)); 
+    z-index: 0;
+}
+.row{
+    display: flex;
+}
+.row iframe{
+    margin-right: 20px;
+    width: 400px;
+    height: 400px;
+    transition: all 0.3s ease;
+}
+.telefone{
+    width: 350px;
+    color:#fff;
+    letter-spacing: 1px;
+    line-height: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.telefone:hover, .endereco:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 3px  3px 0 #666666, 6px  6px  0 #666666, 9px  9px  0 #666666 / .15;
+}
+.endereco{
+    width: 400px;
+    transition: all 0.3s ease;
+}
+.img-contact > img{
+    width: 100%;
+    height: 100%;
+}
+.forms{
+    margin-top: 40px;
+}
+.container-index{
+    display: flex;
+}
+.img-index{
+    width: 400px;
+    height: 300px;
+}
+.text-index{
+    width: 600px;
 }
